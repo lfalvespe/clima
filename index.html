@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Clima</title>
     <link rel="stylesheet" href="css/style.css">
 
     <!--Google Fonts-->
@@ -20,9 +20,11 @@
 </head>
 <body>
 
+    <header><h2>Tempo agora</h2></header>
+
     <div class="container">
         <div class="form">
-            <h3>Tempo agora</h3>
+           
             <div class="form-input-container">
                 <input type="text" name="" id="city-input" placeholder="Digite o nome da cidade">
                 <button id="search">
@@ -52,11 +54,26 @@
             </div>
         </div>
     </div>
-    
+
+    <!--Sugestões-->
+
+    <div id="options">
+        <ul>
+            <li onclick="selectCity(this.innerText)">brasilia</li>
+            <li onclick="selectCity(this.innerText)">manaus</li>
+            <li onclick="selectCity(this.innerText)">minas gerais</li>
+            <li onclick="selectCity(this.innerText)">porto alegre</li>
+            <li onclick="selectCity(this.innerText)">recife</li>
+            <li onclick="selectCity(this.innerText)">rio de janeiro</li>
+            <li onclick="selectCity(this.innerText)">são paulo</li>
+            
+        </ul>
+    </div>
+
     <footer>
         <p>
-            Criado por <a href="https://github.com/lfalvespe"><strong>Fernando Alves</strong></a>
-            <br><em>lfalvespe@gmail.com</em>
+            Criado por <a href="https://github.com/lfalvespe"><strong><em>Fernando Alves</em></strong></a>
+            <br><span><em>lfalvespe@gmail.com</em></span>
         </p>
     </footer>
 
