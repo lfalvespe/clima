@@ -46,9 +46,15 @@ const showWeatherData = async (city) => {
 
     weatherContainer.classList.remove('hide');
 
-    cityInput.value =''
+    cityInput.value ='';
     
 };
+
+function selectCity(cidade) {
+    cityInput.value = cidade;
+    showWeatherData(cidade);
+
+}
 
 // Eventos
 
@@ -67,7 +73,3 @@ cityInput.addEventListener("keyup", (e) =>{
         showWeatherData(city)
     }
 })
-
-
-
-
