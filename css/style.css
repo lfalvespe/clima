@@ -10,8 +10,15 @@ body {
     background-image: linear-gradient(45deg, rgb(8, 8, 40), rgb(149, 144, 196));
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+header h2 {
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: rgb(8, 8, 40);
 }
 
 .hide {
@@ -20,7 +27,7 @@ body {
 
 .container{
     background-color: #15083658;
-    box-shadow: rgba(0, 0, 0, 0.132) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.208) 0px 3px 8px;
     color: #fdfdfd;
     padding: 1.5rem;
     border-radius: 1rem;
@@ -112,17 +119,52 @@ body {
 }
 
 #details-container #wind {
-    color: aquamarine;
+    color: rgb(185, 233, 255);;
+}
+
+#options {
+    margin-top: 40px;
+    width:400px;
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.393);
+}
+
+#options ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style-type:none;
+}
+
+#options ul li {
+    margin: 10px;
+    cursor: pointer;
+}
+
+#options ul li:hover {
+    text-decoration: underline;
 }
 
 footer {
-    margin-top: 50px;
-    color: #fff;
+    margin-top: 70px;
     text-align: center;
 }
 
-footer a {
+footer p {
+    font-size: 13px;
     color: #fff;
+    text-shadow: 1px 1px 1px #00000057;
+    line-height: 20px;
+    background-color: rgba(0, 0, 0, 0.166);
+    border-radius: 0px 5px 0px 5px;
+    padding: 7px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.23);
+}
+
+footer a {
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -130,4 +172,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-
+footer p span {
+    color: rgb(207, 181, 252);
+}
