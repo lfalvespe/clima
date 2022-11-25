@@ -49,6 +49,7 @@ header h1 {
     border: none;
     flex: 1;
     border-radius:4px;
+    outline: none;
 }
 
 .form button{
