@@ -15,7 +15,7 @@ body {
     align-items: center;
 }
 
-header h2 {
+header h1 {
     margin-bottom: 30px;
     color: #fff;
     text-shadow: rgb(8, 8, 40);
@@ -124,7 +124,7 @@ header h2 {
 
 #options {
     margin-top: 40px;
-    width:400px;
+    width:390px;
     font-size: 14px;
     color: #fff;
     text-transform: capitalize;
@@ -174,4 +174,10 @@ footer a:hover {
 
 footer p span {
     color: rgb(207, 181, 252);
+}
+
+@media screen and (max-width:800px) {
+    footer {
+        margin-top: 45px;
+    }
 }
