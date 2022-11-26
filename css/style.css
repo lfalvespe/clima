@@ -154,7 +154,7 @@ body {
 
 footer {
     width: 310px;
-    margin-top: 80px;
+    margin-top: 70px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.068);
     border-radius: 10px;
@@ -198,5 +198,11 @@ footer #links img {
 }
 
 @media screen and (max-width:800px) {
-   
+   footer {
+    margin-top: -10px;
+   }
+
+   #options {
+    margin-top: 10px;
+   }
 }
