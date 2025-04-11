@@ -3,7 +3,7 @@
 // Váriáveis e seleção de elementos:
 
 const apiKey = '444a09eddef5a5fd3d59d81c4cbb37b0';
-const apiCountryURL = 'https://countryflagsapi.com/png/';
+const apiCountryURL = 'https://flagsapi.com/';
 
 const cityInput = document.querySelector('#city-input');
 const searchBtn = document.querySelector('#search');
@@ -17,7 +17,6 @@ const humidityElement = document.querySelector('#humidity span');
 const windElement = document.querySelector('#wind span');
 
 const weatherContainer = document.querySelector('#weather-data');
-
 
 // Funções
 
@@ -33,6 +32,8 @@ const getWeatherData = async(city) => {
 const showWeatherData = async (city) => {
     const data = await getWeatherData(city);
 
+    console.log(data)
+
     cityElement.innerText = data.name;
     tempElement.innerText = parseInt(data.main.temp);
     descElement.innerText = data.weather[0].description;
@@ -40,7 +41,7 @@ const showWeatherData = async (city) => {
         "src",
         `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
     
-    countryElement.setAttribute("src", apiCountryURL + data.sys.country);
+    countryElement.setAttribute("src", apiCountryURL + data.sys.country+'/shiny/64.png');
     humidityElement.innerText = `${data.main.humidity}%`;
     windElement.innerText = `${data.wind.speed}km/h`;
 
