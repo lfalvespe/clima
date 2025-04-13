@@ -20,7 +20,7 @@ body {
 
 a {
     font-weight: 500;
-    color:  rgb(195, 199, 252);
+    color: rgb(195, 199, 252);
     text-decoration: inherit;
     text-shadow: 1px 1px 2px #00000057;
     margin-bottom: 4px;
@@ -193,6 +193,14 @@ footer {
     border-radius: 10px;
 }
 
+#logo {
+    filter: drop-shadow(1px 1px 1px #eeb10a70);
+}
+
+#author {
+    color: rgb(202, 165, 41);
+}
+
 footer p {
     font-size: 13px;
     color: rgba(255, 255, 255, 0.596);
@@ -221,13 +229,25 @@ footer #links {
     column-gap: 43px;
 }
 
+footer #links a {
+   box-shadow: 1px 1px 2px  rgba(255, 217, 0, 0.199);
+   border-radius: 2px;
+}
+
 footer #links img {
     opacity: 60%;
+    padding: 1px;
 }
 
 #links img:hover {
     border-radius: 5px;
     opacity: 100%;
+}
+
+#mark {
+    font-size: .8em;
+    color: #949292;
+    padding: 5px;
 }
 
 @media screen and (max-width:800px) {
@@ -238,7 +258,8 @@ footer #links img {
     #options {
         margin-top: -20px;
     }
-    nav{
+
+    nav {
         text-align: center;
     }
 }
