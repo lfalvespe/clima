@@ -186,6 +186,7 @@ nav a {
 }
 
 footer {
+    margin-bottom: 40px;
     width: 250px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.068);
