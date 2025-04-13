@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "ubuntu", sans-serif;
 }
 
@@ -10,9 +11,10 @@ body {
     background-image: linear-gradient(45deg, rgb(8, 8, 40), rgb(149, 144, 196));
     min-height: 100vh;
     margin: auto;
+    padding: 5px 5px 10px 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -21,6 +23,7 @@ a {
     color:  rgb(180, 184, 245);
     text-decoration: inherit;
     text-shadow: 1px 1px 2px #00000057;
+    margin-bottom: 4px;
 }
 
 a:hover {
@@ -32,15 +35,18 @@ nav {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    column-gap: 5px;
+    column-gap: 20px;
     font-size: .8em;
 }
 
 nav a {
-    margin-top: 5px;
-    padding: 2px 15px;
     border-radius: 5px;
     text-transform: uppercase;
+}
+
+.nav-icon {
+    width: 15px;
+    vertical-align: text-bottom;
 }
 
 .hide {
@@ -183,7 +189,6 @@ nav a {
 
 footer {
     width: 250px;
-    margin-top: 70px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.068);
     border-radius: 10px;
@@ -229,10 +234,6 @@ footer #links img {
 @media screen and (max-width:800px) {
     .container {
         margin-top: -10px;
-    }
-
-    footer {
-        margin-top: -20px;
     }
 
     #options {
